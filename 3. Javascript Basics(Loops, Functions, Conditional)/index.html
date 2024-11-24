@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3: Functions</title>
+</head>
+<body>
+    <h1>Functions</h1>
+    <h4>Why do we need function</h4>
+    <ul>
+        <li>Code modularity</li>
+        <li>Code re-usability</li>
+        <li>Code maintainability</li>
+        <li>Code Testability</li>
+    </ul>
+    <h4>Function example</h4>
+    <code>
+        console.log("Hello world");
+        console.log("Hello world");
+        console.log("Hello world");
+        console.log("Hello world");
+        
+        function greet() {
+            console.log("Hello world");
+        }
+        greet()
+        greet()
+        greet()
+        greet()
+    </code>
+    <h4>What is Arguments?</h4>
+    <p>Arguments in function helps us to provide input to the function</p>
+    <code>
+        function sum(num1, num2) {
+            console.log(num1 + num2)
+        }
+    </code>
+    <h4>Return Statement</h4>
+    <code>
+        function sum(num1, num2) {
+            // Reachable code
+            var sum = num1 + num2;
+            return sum;
+            // Non-reachable code
+        }
+
+        // Call a function
+        var resultOfSum = sum(10, 20)
+        console.log(resultOfSum)
+    </code>
+    <h3>
+        Conditional Statements
+    </h3>
+    <p>
+        If you wanted to execute code in conditional manner, then we need conditional statements
+    </p>
+    <h4>Types of Conditional statements</h4>
+    <ul>
+        <li>1. SWITCH Statement</li>
+        <li>2. IF-ELSE Statement</li>
+    </ul>
+    <h4>IF ELSE</h4>
+    <code>
+        if (condition) {
+            // STATEMENT
+        } else if (condition) {
+            // STATEMENT
+        } else if (condition) {
+            // STATEMENT
+        } else {
+            // STATEMENT
+        }
+    </code>
+    <h5>Example</h5>
+    <code>
+        var switchStatus = false;
+
+        if (switchStatus == true) {
+            console.log("Switch is on")
+        } else {
+            console.log("Switch is off")
+        }
+    </code>
+    <h3>Loops</h3>
+    <p>If you wanted to run group of statements or a set of functions for N times continuosly then we should be using loops</p>
+    <h4>Types of Loops</h4>
+    <ul>
+        <li>FOR Loop</li>
+        <li>While Loop</li>
+        <li>Do While</li>
+    </ul>
+    <h4>FOR Loop Syntax</h4>
+    <code>
+        for (START; END; STEPS) {
+            // Statements
+        }
+    </code>
+    <h4>Example</h4>
+    <code>
+        // Print from 1 to 10 <br />
+        for (var x = 1; x <= 10; x=x+1) {
+            console.log(x)
+        }
+    </code>
+    <h4>WHILE Loop Syntax</h4>
+    <code>
+        while(condition) {
+
+        }
+    </code>
+    <h4>Example</h4>
+    <code>
+        // Print from 1 to 10 <br />
+        var x = 1;
+        while(x <= 10) {
+            console.log(x)
+            x = x + 1;
+        }
+    </code>
+</body>
+</html>
