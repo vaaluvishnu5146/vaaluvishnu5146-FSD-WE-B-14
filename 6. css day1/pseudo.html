@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo Classes</title>
+    <style>
+        .btn {
+            width: 80px;
+            height: 30px;
+            border: 1px solid rgb(201, 201, 201);
+            border-radius: 5px;
+            background-color: transparent;
+            color: rgb(8, 167, 220);
+            transform: scale(0.8);
+        }
+
+        .btn:hover, .btn:focus {
+            cursor: pointer;
+            background-color: rgb(171, 234, 255);
+            border: 1px solid rgb(26, 157, 201);
+            width:  100px;
+            transform: scale(1);
+        }
+
+        .btn:active {
+            cursor: pointer;
+            padding: 5px;
+            background-color: rgb(255, 175, 94);
+            border: 1px solid rgb(26, 157, 201);
+        }
+    </style>
+</head>
+<body>
+    <!-- Button -->
+     <button class="btn">Join here</button>
+</body>
+</html>
