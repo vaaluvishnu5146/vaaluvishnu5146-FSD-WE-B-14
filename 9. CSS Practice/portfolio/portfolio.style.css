@@ -1,0 +1,218 @@
+:root {
+    --BG_COLOR:   #FF3030;
+    --TEXT_LIGHT: #FFFFFF;
+    --TEXT_DARK: #000000;
+}
+
+/* FONT */
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+/* APP */
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+body {
+    background-color: var(--BG_COLOR);
+    color: var(--TEXT_LIGHT);
+    padding:  0 40px 0 40px;
+}
+
+.active-link {
+    color: var(--BG_COLOR);
+}
+
+/* HEADER */
+.header_section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+
+    > .navigation_items {
+        padding: 15px 20px;
+        box-sizing: border-box;
+        position: absolute;
+        display: flex;
+        gap: 15px;
+        top: 200px;
+        right: -55px;
+        width: auto;
+        height: 50px;
+        background-color: var(--TEXT_LIGHT);
+        border-radius: 25px;
+        transform: rotate(90deg);
+        color:var(--TEXT_DARK) ;
+    }
+}
+
+.rounded_cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--TEXT_LIGHT);
+
+    >img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* CONTENT CONTAINER */
+.content_container {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+
+    > .left_container {
+        width: 50%;
+        > .text_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 80%;
+            > h1 {
+                font-size: 80px;
+            }
+            > p {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+        >.social_content {
+            height: 20%;
+            >h4 {
+                margin-bottom: 10px;
+            }
+            >.social_ctas {
+                display: flex;
+                column-gap: 10px;
+            }
+        }
+    }
+
+    > .right_container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        > img {
+            width: auto;
+            height: 100%;
+        }
+    }
+}

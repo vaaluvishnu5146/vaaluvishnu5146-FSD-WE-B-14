@@ -1,0 +1,116 @@
+:root {
+    --TEXT_LIGHT: #FFFFFF;
+    --TEXT_DARK: #000000;
+    --FONT_FAMILY_PRIMARY: "Poppins", sans-serif;
+    --BG-COLOR: rgb(240, 251, 254);
+    --BG-SUCCESS: #0ed20e;
+}
+  
+/* APP */
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    font-family: var(--FONT_FAMILY_PRIMARY);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+body {
+    color: var(--TEXT_LIGHT);
+}
+
+/* UTILITY CLASS */
+.flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.col-gap-10 {
+    column-gap: 10px;
+}
+
+.text_input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    > label {
+        margin-bottom: 5px;
+    }
+    > input, select {
+        background: var(--BG-COLOR);
+        height: 30px;
+        border: none;
+    }
+}
+
+input::placeholder {
+    color: grey;
+    padding: 10px;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    color: var(--TEXT_LIGHT);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: var(--BG-SUCCESS);
+}
+
+/* CONTENT CONTAINER */
+.content_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    box-sizing: border-box;
+
+    >.left_container {
+        width: 50%;
+        height: 100%;
+        color: var(--TEXT_DARK);
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    >.right_container {
+        width: 50%;
+        height: 100%;
+        background-color: var(--BG-COLOR);
+        border-radius: 2px;
+        color: var(--TEXT_DARK);
+        padding: 50px;
+        box-sizing: border-box;
+
+        >.cart_items_list {
+            >.list_item {
+                >.item_image {
+                    width: 15%;
+                    > img {
+                        width:100%
+                    }
+                }
+                >.item_description {
+                    width: 70%;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                >.item_pricing {
+                    width: 15%;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+<!-- https://www.figma.com/board/5Ttvn0SJvBDrI6bYrNp2It/Diagram---egghead.io---Introduction-to-Chakra-UI-(Community)?node-id=802-9203&p=f&t=bdJxiAxQrouwBA55-0 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Details page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./cart.style.css" />
+</head>
+<body>
+    <main class="content_container">
+        <div class="left_container">
+            <h1>Your Details</h1>
+            <p style="margin-bottom: 20px;">If you already have an account, click here to log in.</p>
+            <div class="address_form">
+                <div  style="margin-bottom: 10px;" class="flex justify-space-between col-gap-10">
+                    <div class="text_input">
+                        <label>First Name</label>
+                        <input placeholder="Enter your first name" />
+                    </div>
+                    <div class="text_input">
+                        <label>Last Name</label>
+                        <input placeholder="Enter your last name" />
+                    </div>
+                </div>
+                <div  style="margin-bottom: 10px;"  class="flex">
+                    <div class="text_input">
+                        <label>Full Address</label>
+                        <input placeholder="Enter your address" />
+                    </div>
+                </div>
+                <div  style="margin-bottom: 10px;" class="flex justify-space-between col-gap-10">
+                    <div class="text_input">
+                        <label>City</label>
+                        <input placeholder="Enter your City name" />
+                    </div>
+                    <div class="text_input">
+                        <label>Last Name</label>
+                        <select>
+                            <option>Select your country</option>
+                            <option>India</option>
+                        </select>
+                    </div>
+                </div>
+                <div  style="margin-bottom: 10px;">
+                    <input type="checkbox" /><label>Ship to the billing address.</label>
+                </div>
+                <div>
+                    <button class="btn btn-success">Place Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="right_container">
+            <h1>Your Details</h1>
+            <p style="margin-bottom: 20px;">If price is too hard on your eyes, <b>try changing the theme</b>.</p>
+            <div class="cart_items_list">
+                <div class="list_item flex">
+                    <div class="item_image">
+                        <img src="../assets/Placeholder.png" />
+                    </div>
+                    <div class="item_description flex">
+                        <h5>Penny Board</h5>
+                        <p>PY908656</p>
+                    </div>
+                    <div class="item_pricing flex">
+                        <h5>$199</h5>
+                    </div>
+                </div>
+                <div class="list_item flex">
+                    <div class="item_image">
+                        <img src="../assets/Placeholder.png" />
+                    </div>
+                    <div class="item_description flex">
+                        <h5>Penny Board</h5>
+                        <p>PY908656</p>
+                    </div>
+                    <div class="item_pricing flex">
+                        <h5>$199</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
