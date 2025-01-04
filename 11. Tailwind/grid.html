@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Grid Layout</title>
+    <style>
+        html, body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .grid-app-container {
+            display: grid;
+            grid-template: 
+            "h h h" 100px
+            "n ar ad" calc(100vh - 200px)
+            "f f f" 100px / 1fr 4fr 1fr;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            grid-area: h;
+            background: red;
+        }
+
+        .nav {
+            grid-area: n;
+            background: green;
+        }
+
+        .article {
+            grid-area: ar;
+            background: grey;
+        }
+
+        .ads {
+            grid-area: ad;
+            background: blue;
+        }
+
+        .footer {
+            grid-area: f;
+            background: yellow;
+        }
+
+        @media screen and (max-width: 480px) {
+            .grid-app-container {
+                grid-template: "h h h" 100px
+                "n n n" 100px
+                "ad ad ad" 50px
+                "ar ar ar" calc(100vh - 350px)
+                "f f f" 100px / 1fr 1fr 1fr;
+            }
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="grid-app-container">
+      <div class="header">
+        <div>Logo</div>
+        <div>
+            Links
+        </div>
+      </div>
+      <div class="nav"></div>
+      <div class="article"></div>
+      <div class="ads"></div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>

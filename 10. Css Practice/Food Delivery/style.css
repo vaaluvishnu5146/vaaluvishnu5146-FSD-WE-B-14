@@ -198,3 +198,7 @@ a {
         font-size: 1.2rem;
     }
 }
+
+p {
+    height: calc(100% - 20px);
+}
