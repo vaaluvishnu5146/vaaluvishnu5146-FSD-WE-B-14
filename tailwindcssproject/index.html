@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask me identity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font-family: "Righteous", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- font-family: "Saira", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header id="header" class="flex px-10 header-container">
+        <div class="w-1/3 flex items-center">
+            <img class="h-full" src="./assets/logo.png" />
+        </div>
+        <div class="w-2/3 flex items-center justify-between">
+            <nav>
+                <ul class="flex gap-x-8">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Courses</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <div class="flex">
+                <ul class="flex gap-x-4">
+                    <li>
+                        <img style="width: 30px;" src="./assets/cart.svg" />
+                    </li>
+                    <li>
+                        <img src="./assets/search.svg" />
+                    </li>
+                    <li>
+                        <img src="./assets/profile.svg" />
+                    </li>
+                </ul>
+            </div>
+            <div class="flex">
+                <button class="h-full btn btn-1">Login</button>
+                <button class="h-full btn btn-2 gradient-bg">Signup</button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+     <section id="hero" class="flex px-20 hero-section gradient-bg">
+        <div class="w-1/2 h-full flex flex-col content">
+            <p class="mb-5 font-thin">Successful coaches are visionaries</p>
+            <h1 class="mb-10  text-7xl">
+                Good <span>coaching</span> is good teaching & nothing else.
+            </h1>
+            <div class="flex gap-x-8 mb-10">
+                <button class="btn btn-3 px-10 w-auto">View Courses</button>
+                <button class="btn btn-1 w-auto" style="color: #FFFFFF;">Get Free Consultation</button>
+            </div>
+            <div class="search-input flex gap-x-4">
+                <input class="w-2/3" placeholder="What do you want to learn today?" />
+                <button class="w-1/3  btn btn-2 gradient-bg">Search</button>
+            </div>
+        </div>
+        <div style="background-image: url('./assets/women.png');" class="w-1/2 mix-blend-multiply image">
+        </div>
+        <div class="radial-blur blur-2xl"></div>
+     </section>
+     <!-- Podcasts section -->
+      <section id="podcast" class="podcast-container px-20 gradient-bg">
+        <div class="grid grid-cols-4 gap-4 h-full">
+            <div class="w-full brand-image" style="background-image: url('./assets/amazon.svg');">
+            </div>
+            <div class="w-full brand-image" style="background-image: url('./assets/cisco.svg');">
+            </div>
+            <div class="w-full brand-image" style="background-image: url('./assets/logitech.svg');">
+            </div>
+            <div class="w-full brand-image" style="background-image: url('./assets/spotify.svg');">
+            </div>
+        </div>
+      </section>
+      <!-- Featured Courses -->
+       <section class="px-20 featured-courses" id="featured-courses">
+            <h3 class="text-center text-5xl">Featured <span>Courses</span></h3>
+            <p class="text-center text-md uppercase mb-20">The feature courses are we invented our teaching part</p>
+           <div class="mb-20 products-container">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="products-card">
+                        <img src="./assets/b1.png" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Motion Graphics: Create a Nice Typography Animation
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b2.png" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Education Software and PHP and JS System Script
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b1.png" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Motion Graphics: Create a Nice Typography Animation
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b2.png" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Education Software and PHP and JS System Script
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b1.png" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Motion Graphics: Create a Nice Typography Animation
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b2.png" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Education Software and PHP and JS System Script
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b1.png" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Motion Graphics: Create a Nice Typography Animation
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b2.png" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Education Software and PHP and JS System Script
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="flex justify-center">
+            <button class="btn btn-2 gradient-bg">See more</button>
+           </div>
+        </section>
+</body>
+
+</html>
