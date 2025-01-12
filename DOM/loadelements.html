@@ -20,6 +20,11 @@
 
         .flex {
             display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row-gap-10 {
+            row-gap: 10px;
         }
 
         .col-gap-10 {
@@ -28,7 +33,8 @@
     </style>
 </head>
 <body>
-    <div id="items-container" class="flex items-container col-gap-10">
+    <p>Hey Vishnu!</p>
+    <div id="items-container" class="flex items-container row-gap-10 col-gap-10">
     </div>
     <script>
         const container = document.getElementById("items-container");
@@ -53,6 +59,13 @@
             });
         }
 
+        // Select elements using className
+        // const elementCollection = document.getElementsByClassName("bg-blue");
+        // console.log(elementCollection);
+
+        // Select elements using tagName
+        const elementCollection = document.getElementsByTagName("p");
+        console.log(elementCollection);
     </script>
 </body>
 </html>
