@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lap Counter</title>
+</head>
+<body>
+    <p>Total Laps Completed</p>
+    <h1 id="count">
+        0
+    </h1>
+    <div>
+        <button id="subtract">Subtract</button>
+        <button id="add">Add</button>
+    </div>
+    <script>
+        var count = 0;
+        const subtractCta = document.getElementById('subtract');
+        const addCta = document.getElementById('add');
+        const countHeading = document.getElementById("count");
+        subtractCta.addEventListener("click", () => {
+            console.log('Subtract clicked');
+            count = count - 1;
+            countHeading.innerText = count;
+        })
+        addCta.addEventListener("click", () => {
+            console.log('Add clicked');
+            count = count + 1;
+            countHeading.innerText = count;
+        })
+    </script>
+</body>
+</html>
