@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Elements</title>
+    <style>
+        .square {
+            width: 100px;
+            height: 100px;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .col-gap-10 {
+            column-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="items-container" class="flex items-container col-gap-10">
+    </div>
+    <script>
+        const container = document.getElementById("items-container");
+        const userRequirement =  Number(window.prompt("Enter your requirement"));
+
+        for (let x = 0; x < userRequirement; x++) {
+            createSquare(x);
+        }
+
+        function createSquare(value) {
+            const div = document.createElement('div');
+            div.setAttribute("class", "square bg-blue");
+            div.setAttribute("id", "square " + value);
+            attachEventListeners(div);
+            container.appendChild(div);
+        }
+
+        function attachEventListeners(element) {
+            element.addEventListener("click", function (event) {
+                event.target.classList.remove('bg-blue');
+                event.target.classList.add('bg-green');
+            });
+        }
+
+    </script>
+</body>
+</html>
