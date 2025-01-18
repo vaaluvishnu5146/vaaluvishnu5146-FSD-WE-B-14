@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3: Dom Events</title>
+    <style>
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .square1 {
+            width: 200px;
+            height: 200px;
+            background: green;
+        }
+
+        .square2{
+            width: 150px;
+            height: 150px;
+            background: red;
+        }
+
+        .square3{
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="square1" class="flex square1">
+        <div id="square2" class="flex square2">
+            <div id="square3" class="square3">
+            </div>
+        </div>
+    </div>
+    <script>
+        const square1 = document.getElementById("square1");
+        const square2 = document.getElementById("square2");
+        const square3 = document.getElementById("square3");
+
+        square1.addEventListener("click", function () {
+            console.log("Green clicked")
+        }, true)
+
+        square2.addEventListener("click", function () {
+            console.log("Red clicked")
+        })
+
+        square3.addEventListener("click", function () {
+            console.log("Blue clicked")
+        })
+        
+        document.addEventListener("click", function () {
+            console.log("document clicked")
+        }, true)
+
+        window.addEventListener("click", function () {
+            console.log("window clicked")
+        }, true)
+
+    </script>
+</body>
+</html>

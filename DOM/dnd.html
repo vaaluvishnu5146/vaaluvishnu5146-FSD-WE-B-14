@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex h-screen">
+        <div id="source" class="w-1/2 flex flex-col gap-y-2.5 h-full border-4 border-red-600">
+            <div class="h-10 border-4 border-blue-600" draggable="true">Buy Groceries</div>
+            <div class="h-10 border-4 border-blue-600" draggable="true">Buy Dresses</div>
+            <div class="h-10 border-4 border-blue-600" draggable="true">Pay Electricity bill</div>
+        </div>
+        <div id="destination" class="w-1/2 h-full border-4 border-green-600">
+            Destination
+        </div>
+    </div>
+    <script>
+        const source = document.getElementById("source");
+        const destination = document.getElementById("destination");
+
+        function createListItem(data = "") {
+            const div = document.createElement("div");
+            div.setAttribute("class", "h-10 border-4 border-blue-600");
+            div.innerText = data;
+            return div;
+        }
+
+        source.addEventListener("dragstart", (e) => {
+            setTimeout(() => {
+                e.target.remove();
+            }, 3000);
+            e.dataTransfer.setData("text/plain", e.target.innerText);
+        });
+
+        destination.addEventListener("dragover", (e) => {
+            e.preventDefault();
+        })
+
+        destination.addEventListener("drop", (e) => {
+            e.preventDefault();
+            const droppedElement = createListItem(e.dataTransfer.getData("text/plain"));
+            destination.appendChild(droppedElement);
+        })
+
+    </script>
+</body>
+</html>
