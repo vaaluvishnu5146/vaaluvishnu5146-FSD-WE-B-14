@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "question": "What is HTML?",
+            "options": [
+                {
+                    "value": "Hyper Text Markup Language",
+                    "isCorrect": true
+                },
+                {
+                    "value": "Hyper Transit Mall lulu",
+                    "isCorrect": false
+                },
+                {
+                    "value": "Hyper Market transit mall",
+                    "isCorrect": false
+                },
+                {
+                    "value": "Hello Market transit mall",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "question": "What is CSS?",
+            "options": [
+                {
+                    "value": "Cascading Style sheet",
+                    "isCorrect": true
+                },
+                {
+                    "value": "Cascading storm sheet",
+                    "isCorrect": false
+                },
+                {
+                    "value": "Cascading style show",
+                    "isCorrect": false
+                },
+                {
+                    "value": "CSS as CSS",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ]
+}

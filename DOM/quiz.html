@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        button:disabled {
+            background: grey;
+            cursor: not-allowed;
+        }
+
+    </style>
+</head>
+<body>
+   <main class="flex quiz-container">
+    <div class="sidebar w-20 h-screen bg-slate-200 px-2 py-4">
+        <ul class="flex flex-col gap-y-4 justify-center " id="sidebar-list">
+        </ul>
+    </div>
+    <div class="flex content-container h-screen w-full bg-slate-50 items-center justify-center">
+        <div class="w-1/2 quiz-content">
+            <p id="questionTracker" class="text-md mb-2 text-zinc-400"><span id="currentQuestionNumber">1</span> of <span id="totalQuestions">10</span> Questions</p>
+            <h1 id="title" class="text-5xl font-bold mb-10">What is DOM in web development?</h1>
+            <ul id="options-container" class="mb-10">
+            </ul>
+            <div class="flex justify-between">
+                <button id="back" class="w-48 h-14 border-green-500 border-2 rounded mb-5 hover:bg-green-400">Go Back</button>
+                <button id="next" class="w-48 h-14 border-green-500 border-2 rounded mb-5 hover:bg-green-400">Go Next</button>
+            </div>
+        </div>
+    </div>
+   </main>
+   <script src="./quix.js"></script>
+</body>
+</html>
