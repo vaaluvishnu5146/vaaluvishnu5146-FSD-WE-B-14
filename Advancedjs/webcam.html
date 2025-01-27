@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEbcam</title>
+    <style>
+        .myFeed {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WEbcam access</h1>
+    <!-- <video class="myFeed" id="myFeed" autoplay></video> -->
+    <script>
+        // const video = document.getElementById('myFeed');
+        // const mediaStreamPromise = window.navigator.mediaDevices.getUserMedia({ video: true });
+        // mediaStreamPromise.then((result) => {
+        //     console.log("Result", result)
+        //     video.srcObject = result;
+        // }).catch((error) => {
+        //     console.log("Error", error);
+        //     alert("Request declined")
+        // })
+        const testPromise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Because students understood")
+            }, 10000);
+        });
+        console.log(testPromise);
+        console.log("Hey");
+        testPromise.then((result) => {
+                console.log(result)
+            }).catch((error) => {
+                console.log(error)
+            })
+    </script>
+</body>
+</html>
