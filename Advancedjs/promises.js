@@ -26,7 +26,7 @@ const a = new Promise(function (resolve, reject) {
 
 console.log('Hi')
 
- a.then((result) => {
+a.then((result) => {
     console.log("Result ===>", result)
  }).catch((error) => {
     console.log("Error ===>", error)
