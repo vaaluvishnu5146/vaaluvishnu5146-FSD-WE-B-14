@@ -53,14 +53,15 @@ updateTodoForm.addEventListener("submit", function (e) {
     }
 
     data = data.filter((d) => d.id !== Number(idElement.value));
-    updateLocalStorage()
     
     const newTodo = {
         id: idElement.value,
         title: titleEl.value,
         description: descriptionElement.value
     };
+    
     data.push(newTodo);
+    updateLocalStorage()
 
     // Refresh the app
     refreshApp()
